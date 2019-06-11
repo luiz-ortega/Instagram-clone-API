@@ -4,5 +4,13 @@
   "main": "index.js",
   "repository": "https://github.com/luiz-ortega/Instagram-clone-API.git",
   "author": "luiz-ortega <luiz@luby.com.br>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.5.14",
+    "nodemon": "^1.19.1"
+  }
 }
