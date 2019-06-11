@@ -1,0 +1,8 @@
+{
+  "name": "Instagram-clone-API",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/luiz-ortega/Instagram-clone-API.git",
+  "author": "luiz-ortega <luiz@luby.com.br>",
+  "license": "MIT"
+}
