@@ -21,7 +21,7 @@ module.exports = {
             .resize(500)
             .jpeg({ quality: 70 })
             .toFile(
-                path.resolve(req.file.destination, 'resized', image)
+                path.resolve(req.file.destination, 'resized', fileName)
             );
 
         fs.unlinkSync(req.file.path);
@@ -33,6 +33,8 @@ module.exports = {
             hashtags,
             image: fileName
         });
+
+        req.io.emit('post', post);
 
         return res.json(post);
     }
